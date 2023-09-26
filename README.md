@@ -172,14 +172,6 @@ This is the output from terminal after `Mapify.deserialize` the object.
 - https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c
 - https://howtodoinjava.com/typescript/maps/
 
----
-
-## Support me
-
-You can support me listening to my music on all streaming platforms.
-
-Check my Linktree https://linktr.ee/idemax for all links.
-
 ----
 
 ## Change log
@@ -193,3 +185,11 @@ Check my Linktree https://linktr.ee/idemax for all links.
 - Serialize and deserialize Map objects with custom keys and values
 - Serialize and deserialize Map objects with custom keys and values with nested Maps
 - Serialize and deserialize Map objects with custom keys and values with nested Maps with custom keys and values
+
+---
+
+## Support me
+
+You can support me listening to my music on all streaming platforms.
+
+Check my Linktree https://linktr.ee/idemax for all links.
