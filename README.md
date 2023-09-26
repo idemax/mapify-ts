@@ -188,6 +188,12 @@ This is the output from terminal after `Mapify.deserialize` the object.
 
 ---
 
+## Thanks for the help
+
+[@RodrigoWebDev](https://github.com/RodrigoWebDev)
+
+---
+
 ## Support me
 
 You can support me listening to my music on all streaming platforms.
