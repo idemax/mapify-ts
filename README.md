@@ -194,6 +194,10 @@ This is the output from terminal after `Mapify.deserialize` the object.
 
 ---
 
+## Contribute
+
+Feel free to contribute to this project. I will be happy to review your PRs.
+
 ## Support me
 
 You can support me listening to my music on all streaming platforms.
