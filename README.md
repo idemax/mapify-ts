@@ -10,12 +10,12 @@
   - [Summary](#summary)
   - [Introduction](#introduction)
     - [What `Mapify-ts` does?](#what-mapify-ts-does)
-  - [Mapify-ts.serialize](#mapify-tsserialize)
+  - [MapifyTs.serialize](#mapifytsserialize)
     - [#1 console output](#1-console-output)
     - [#2 console output](#2-console-output)
     - [#3 console output](#3-console-output)
     - [#4 console output](#4-console-output)
-  - [Mapify-ts.deserialize](#mapify-tsdeserialize)
+  - [MapifyTs.deserialize](#mapifytsdeserialize)
     - [#1 console output](#1-console-output-1)
   - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
@@ -68,7 +68,7 @@ Hope you enjoy it!
 
 ---
 
-## Mapify-ts.serialize
+## MapifyTs.serialize
 
 Serialize a Map object to a native javascript object.
 
@@ -85,8 +85,8 @@ Serialize a Map object to a native javascript object.
 
     console.log(myMap); // #1 console output
     console.log(JSON.stringify(myMap)); // #2 console output
-    console.log(Mapify-ts.serialize(myMap)); // #3 console output
-    console.log(JSON.stringify(Mapify-ts.serialize(myMap))); // #4 console output
+    console.log(MapifyTs.serialize(myMap)); // #3 console output
+    console.log(JSON.stringify(MapifyTs.serialize(myMap))); // #4 console output
 
 Following the example above, the console output will be:
 
@@ -112,30 +112,30 @@ This is the output from terminal after `stringify` the map.
 
 ### #3 console output
 
-This is the output from terminal after `Mapify-ts.serialize` the map.
+This is the output from terminal after `MapifyTs.serialize` the map.
 
-    > console.log(Mapify-ts.serialize(myMap));
+    > console.log(MapifyTs.serialize(myMap));
     
     {
         __map__: { '__map:0__': { foo: 'bar', hello: 'world' } },
         '__map:0__': 'foobar'
     }
 
-*The `Mapify-ts.serialize` method will serialize the map to a native javascript object mapping the keys to a `__map__` parent property.*
+*The `MapifyTs.serialize` method will serialize the map to a native javascript object mapping the keys to a `__map__` parent property.*
 
 ### #4 console output
 
-This is the output from terminal after `stringify` the output from `Mapify-ts.serialize`.
+This is the output from terminal after `stringify` the output from `MapifyTs.serialize`.
 
-    > console.log(JSON.stringify(Mapify-ts.serialize(myMap)));
+    > console.log(JSON.stringify(MapifyTs.serialize(myMap)));
 
     {"__map__":{"__map:0__":{"foo":"bar","hello":"world"}},"__map:0__":"foobar"}
 
-*The `stringify` method supports the output from `Mapify-ts.serialize`.*
+*The `stringify` method supports the output from `MapifyTs.serialize`.*
 
 ---
 
-## Mapify-ts.deserialize
+## MapifyTs.deserialize
 
 Deserialize a native javascript object to a Map object.
 
@@ -149,7 +149,7 @@ Deserialize a native javascript object to a Map object.
     const myMap = new Map<MyType, string>();
     myMap.set({ foo: 'bar', hello: 'world' }, 'foobar');
 
-    const serialized = Mapify-ts.serialize(myMap);
+    const serialized = MapifyTs.serialize(myMap);
     const strSerialized = JSON.stringify(serialized);
 
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -165,7 +165,7 @@ Deserialize a native javascript object to a Map object.
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
     const jsonDeserialized = JSON.parse(strSerialized);
-    const deserialized = Mapify-ts.deserialize(jsonDeserialized);
+    const deserialized = MapifyTs.deserialize(jsonDeserialized);
 
     console.log(deserialized); // #1 console output
 
@@ -173,13 +173,13 @@ Following the example above, the console output will be:
 
 ### #1 console output
 
-This is the output from terminal after `Mapify-ts.deserialize` the object.
+This is the output from terminal after `MapifyTs.deserialize` the object.
 
     > console.log(deserialized);
 
     Map(1) { { foo: 'bar', hello: 'world' } => 'foobar' }
 
-*The `Mapify-ts.deserialize` method will deserialize the native javascript object to a Map object.* 
+*The `MapifyTs.deserialize` method will deserialize the native javascript object to a Map object.* 
 
 ## Pre-requisites
 
