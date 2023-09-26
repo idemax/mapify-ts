@@ -1,4 +1,4 @@
-import Mapify from './src';
+import MapifyTs from './src';
 
-console.log('serialize:', Mapify.serialize({}));
-console.log('deserialize:', Mapify.deserialize({}));
+console.log('serialize:', MapifyTs.serialize({}));
+console.log('deserialize:', MapifyTs.deserialize({}));

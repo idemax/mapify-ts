@@ -1,4 +1,4 @@
-import Mapify from '../src';
+import MapifyTs from '../src';
 
 type MyAlias = 'a' | 'b' | 'c';
 type MyDeepType = {
@@ -290,9 +290,9 @@ const myTypeValue: MyType = {
 };
 
 test('test complex type', () => {
-    const serializedObj = Mapify.serialize(myTypeValue);
-    const serializedDeserializedObj = Mapify.serialize(
-        Mapify.deserialize(serializedObj),
+    const serializedObj = MapifyTs.serialize(myTypeValue);
+    const serializedDeserializedObj = MapifyTs.serialize(
+        MapifyTs.deserialize(serializedObj),
     );
     const jsonStringFromSerialized = JSON.stringify(serializedObj);
     const jsonStringFromSerializedDeserialized = JSON.stringify(

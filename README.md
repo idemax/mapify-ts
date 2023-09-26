@@ -1,21 +1,21 @@
-# `Mapify`
+# `Mapify-ts`
 
-`Mapify` is a class that provides methods to serialize and deserialize objects supporting `Map`.
+`Mapify-ts` is a class that provides methods to serialize and deserialize objects supporting `Map`.
 
 ---
 
 ## Summary
 
-- [`Mapify`](#mapify)
+- [`Mapify-ts`](#mapify-ts)
   - [Summary](#summary)
   - [Introduction](#introduction)
-    - [What `Mapify` does?](#what-mapify-does)
-  - [Mapify.serialize](#mapifyserialize)
+    - [What `Mapify-ts` does?](#what-mapify-ts-does)
+  - [Mapify-ts.serialize](#mapify-tsserialize)
     - [#1 console output](#1-console-output)
     - [#2 console output](#2-console-output)
     - [#3 console output](#3-console-output)
     - [#4 console output](#4-console-output)
-  - [Mapify.deserialize](#mapifydeserialize)
+  - [Mapify-ts.deserialize](#mapify-tsdeserialize)
     - [#1 console output](#1-console-output-1)
   - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
@@ -51,9 +51,9 @@ Native JSON package does not support `stringify` Map out of the box.
 
 ---
 
-### What `Mapify` does?
+### What `Mapify-ts` does?
 
-`Mapify` will serialize the map to a native javascript object. Also enables to deserialize the object back to a Map.
+`Mapify-ts` will serialize the map to a native javascript object. Also enables to deserialize the object back to a Map.
 
 This native javascript object can be serialized to JSON using `stringify`. And can be deserialized back.
 
@@ -67,7 +67,7 @@ Hope you enjoy it!
 
 ---
 
-## Mapify.serialize
+## Mapify-ts.serialize
 
 Serialize a Map object to a native javascript object.
 
@@ -84,8 +84,8 @@ Serialize a Map object to a native javascript object.
 
     console.log(myMap); // #1 console output
     console.log(JSON.stringify(myMap)); // #2 console output
-    console.log(Mapify.serialize(myMap)); // #3 console output
-    console.log(JSON.stringify(Mapify.serialize(myMap))); // #4 console output
+    console.log(Mapify-ts.serialize(myMap)); // #3 console output
+    console.log(JSON.stringify(Mapify-ts.serialize(myMap))); // #4 console output
 
 Following the example above, the console output will be:
 
@@ -111,30 +111,30 @@ This is the output from terminal after `stringify` the map.
 
 ### #3 console output
 
-This is the output from terminal after `Mapify.serialize` the map.
+This is the output from terminal after `Mapify-ts.serialize` the map.
 
-    > console.log(Mapify.serialize(myMap));
+    > console.log(Mapify-ts.serialize(myMap));
     
     {
         __map__: { '__map:0__': { foo: 'bar', hello: 'world' } },
         '__map:0__': 'foobar'
     }
 
-*The `Mapify.serialize` method will serialize the map to a native javascript object mapping the keys to a `__map__` parent property.*
+*The `Mapify-ts.serialize` method will serialize the map to a native javascript object mapping the keys to a `__map__` parent property.*
 
 ### #4 console output
 
-This is the output from terminal after `stringify` the output from `Mapify.serialize`.
+This is the output from terminal after `stringify` the output from `Mapify-ts.serialize`.
 
-    > console.log(JSON.stringify(Mapify.serialize(myMap)));
+    > console.log(JSON.stringify(Mapify-ts.serialize(myMap)));
 
     {"__map__":{"__map:0__":{"foo":"bar","hello":"world"}},"__map:0__":"foobar"}
 
-*The `stringify` method supports the output from `Mapify.serialize`.*
+*The `stringify` method supports the output from `Mapify-ts.serialize`.*
 
 ---
 
-## Mapify.deserialize
+## Mapify-ts.deserialize
 
 Deserialize a native javascript object to a Map object.
 
@@ -148,7 +148,7 @@ Deserialize a native javascript object to a Map object.
     const myMap = new Map<MyType, string>();
     myMap.set({ foo: 'bar', hello: 'world' }, 'foobar');
 
-    const serialized = Mapify.serialize(myMap);
+    const serialized = Mapify-ts.serialize(myMap);
     const strSerialized = JSON.stringify(serialized);
 
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -164,7 +164,7 @@ Deserialize a native javascript object to a Map object.
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
     const jsonDeserialized = JSON.parse(strSerialized);
-    const deserialized = Mapify.deserialize(jsonDeserialized);
+    const deserialized = Mapify-ts.deserialize(jsonDeserialized);
 
     console.log(deserialized); // #1 console output
 
@@ -172,13 +172,13 @@ Following the example above, the console output will be:
 
 ### #1 console output
 
-This is the output from terminal after `Mapify.deserialize` the object.
+This is the output from terminal after `Mapify-ts.deserialize` the object.
 
     > console.log(deserialized);
 
     Map(1) { { foo: 'bar', hello: 'world' } => 'foobar' }
 
-*The `Mapify.deserialize` method will deserialize the native javascript object to a Map object.* 
+*The `Mapify-ts.deserialize` method will deserialize the native javascript object to a Map object.* 
 
 ## Pre-requisites
 
@@ -187,7 +187,7 @@ This is the output from terminal after `Mapify.deserialize` the object.
 
 ## Installation
 
-    npm install @idemax/mapify
+    npm install @idemax/mapify-ts
 
 ---
 

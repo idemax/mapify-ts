@@ -1,5 +1,5 @@
 {
-    "name": "mapify",
+    "name": "mapify-ts",
     "version": "0.0.1",
     "description": "Mapify is a class that provides methods to serialize and deserialize objects supporting Map.",
     "main": "./dist/index.js",
@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/idemax/mapify.git"
+        "url": "git+https://github.com/idemax/mapify-ts.git"
     },
     "author": "Marcelo Lourencini Filho (Idemax)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/idemax/mapify/issues"
+        "url": "https://github.com/idemax/mapify-ts/issues"
     },
-    "homepage": "https://github.com/idemax/mapify#readme",
+    "homepage": "https://github.com/idemax/mapify-ts#readme",
     "devDependencies": {
         "@types/jest": "^29.5.5",
         "jest": "^29.7.0",
