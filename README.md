@@ -214,6 +214,7 @@ This is the output from terminal after `Mapify.deserialize` the object.
 
 ## Thanks for the help
 
+[@gustavoyasunaka](https://github.com/gustavoyasunaka)
 [@RodrigoWebDev](https://github.com/RodrigoWebDev)
 
 ---
