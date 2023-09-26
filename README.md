@@ -179,3 +179,17 @@ This is the output from terminal after `Mapify.deserialize` the object.
 You can support me listening to my music on all streaming platforms.
 
 Check my Linktree https://linktr.ee/idemax for all links.
+
+----
+
+## Change log
+
+### 0.0.1
+
+- Initial release
+- Serialize and deserialize Map objects
+- Serialize and deserialize Map objects with custom keys
+- Serialize and deserialize Map objects with custom values
+- Serialize and deserialize Map objects with custom keys and values
+- Serialize and deserialize Map objects with custom keys and values with nested Maps
+- Serialize and deserialize Map objects with custom keys and values with nested Maps with custom keys and values
