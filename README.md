@@ -19,6 +19,7 @@
     - [#1 console output](#1-console-output-1)
   - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
+    - [Import](#import)
   - [References](#references)
   - [Change log](#change-log)
     - [0.0.1](#001)
@@ -187,7 +188,11 @@ This is the output from terminal after `Mapify-ts.deserialize` the object.
 
 ## Installation
 
-    npm install @idemax/mapify-ts
+    npm i mapify-ts
+
+### Import
+
+    import MapifyTs from 'mapify-ts';
 
 ---
 
