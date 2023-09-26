@@ -4,6 +4,30 @@
 
 ---
 
+## Summary
+
+- [`Mapify`](#mapify)
+  - [Summary](#summary)
+  - [Introduction](#introduction)
+    - [What `Mapify` does?](#what-mapify-does)
+  - [Mapify.serialize](#mapifyserialize)
+    - [#1 console output](#1-console-output)
+    - [#2 console output](#2-console-output)
+    - [#3 console output](#3-console-output)
+    - [#4 console output](#4-console-output)
+  - [Mapify.deserialize](#mapifydeserialize)
+    - [#1 console output](#1-console-output-1)
+  - [Pre-requisites](#pre-requisites)
+  - [Installation](#installation)
+  - [References](#references)
+  - [Change log](#change-log)
+    - [0.0.1](#001)
+  - [Thanks for the help](#thanks-for-the-help)
+  - [Contribute](#contribute)
+  - [Support me](#support-me)
+
+---
+
 ## Introduction
 
 Native JSON package does not support `stringify` Map out of the box.
