@@ -22,6 +22,7 @@
     - [Import](#import)
   - [References](#references)
   - [Change log](#change-log)
+    - [0.0.2](#002)
     - [0.0.1](#001)
   - [Thanks for the help](#thanks-for-the-help)
   - [Contribute](#contribute)
@@ -204,6 +205,10 @@ This is the output from terminal after `MapifyTs.deserialize` the object.
 ----
 
 ## Change log
+
+### 0.0.2
+
+- Force new version
 
 ### 0.0.1
 

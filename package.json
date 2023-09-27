@@ -1,6 +1,6 @@
 {
     "name": "mapify-ts",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Mapify is a class that provides methods to serialize and deserialize objects supporting Map.",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
