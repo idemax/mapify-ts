@@ -1,6 +1,11 @@
+
 # `Mapify-ts`
 
 `Mapify-ts` is a class that provides methods to serialize and deserialize objects supporting `Map`.
+
+---
+
+> [Read Medium article.](https://medium.com/@idemax/mapify-ts-serializing-and-deserializing-map-objects-in-typescript-aeac8c272029) or check the stats about [+6k downloads (May 2024).](https://npm-stat.com/charts.html?package=mapify-ts)
 
 ---
 
@@ -237,4 +242,4 @@ Feel free to contribute to this project. I will be happy to review your PRs.
 
 You can support me listening to my music on all streaming platforms.
 
-Check my Linktree https://linktr.ee/idemax for all links.
+Check my Linktree [linktr.ee/marcelolfilhodev](https://linktr.ee/marcelolfilhodev) for all links.
